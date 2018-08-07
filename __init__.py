@@ -1,15 +1,21 @@
-from mycroft import MycroftSkill, intent_file_handler
+from mycroft import MycroftSkill, intent_handler
+from adapt.intent import IntentBuilder
 
-
-class Remember(MycroftSkill):
+class RememberSkill(MycroftSkill):
     def __init__(self):
-        MycroftSkill.__init__(self)
+        super(RememberSkill, self).__init__(name'RememberSkill')
 
-    @intent_file_handler('remember.intent')
+    @intent_handler(IntentBuilder("RememberIntent").require("remember").require("thought")
     def handle_remember(self, message):
-        self.speak_dialog('remember')
+        thought = message.data.get("thought")
+        self.settings["thought"] = str(thought)
+        self.speak_dialog("remember")
 
+    @intent_handler(IntentBuilder("RememberIntent").require("recall").require("remember"))
+    def handle_recall(self, message):
+        thought = self.settings.get("thought")
+        self.speak_dialog("recall", data={"thought" : str(thought)})
 
 def create_skill():
-    return Remember()
+    return RememberSkill()
 
