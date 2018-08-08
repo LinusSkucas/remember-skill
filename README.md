@@ -1,15 +1,16 @@
 ## Remember
-Makes mycroft remember what you tell it.
+Remembers and Recalls thoughts for you.
 
-## Description
-When you tell mycroft to remember something, he will store it away until you ask for it.
+## Description 
+When you ask mycroft to remember a thought for you, he will store that thought away until you ask for it.
+When you ask mycroft to recall a thought for you, he will tell you the thought you told him.
 
-when you ask mycrot what you were going to remember, he will tell you what you needed to remember.
+## Examples 
+* "remember that the phone is charging."
+* "remember that Dave is coming over for lunch."
+* "What do I need to remember?"
+* "What do I want to remember?"
+* "What did I need to remember?"
 
-## Examples
-
-
-## Credits
-Linus S
-
-
+## Credits 
+Linus S (LinusS1/brrn)
