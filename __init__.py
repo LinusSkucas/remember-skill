@@ -10,15 +10,9 @@ class RememberSkill(MycroftSkill):
     def __init__(self):
         super(RememberSkill, self).__init__(name='RememberSkill')
 
-    @intent_handler(IntentBuilder("RememberThatIntent").require("remember").require("thoughtThat"))
+    @intent_handler(IntentBuilder("RememberIntent").require("remember").require("thought"))
     def handle_remember_that(self, message):
         thought = "that " + message.data.get("thought")
-        self.settings["thought"] = str(thought)
-        self.speak_dialog("remember")
-
-    @intent_handler(IntentBuilder("RememberToIntent").require("remember").require("thoughtTo"))
-    def handle_remember_to(self, message):
-        thought = "to " + message.data.get("thought")
         self.settings["thought"] = str(thought)
         self.speak_dialog("remember")
 

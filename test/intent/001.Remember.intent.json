@@ -2,7 +2,7 @@
 	"utterance": "remember that i need food",
 	"intent_type": "RememberIntent",
 	"intent": {
-		"thought" : "that i need food"
+		"thought" : "i need food"
 	},
 	"expected_dialog" : "remember"
 }

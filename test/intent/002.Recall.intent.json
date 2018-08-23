@@ -1,5 +1,5 @@
 {
 	"utterance": "what do i need to remember?",
-	"intent_type": "RememberIntent",
+	"intent_type": "recall.intent",
 	"expected_dialog": "recall"
 }
