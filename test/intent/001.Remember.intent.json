@@ -1,6 +1,6 @@
 {
 	"utterance": "remember that i need food",
-	"intent_type": "RememberIntent",
+	"intent_type": "remember.intent",
 	"intent": {
 		"thought" : "i need food"
 	},

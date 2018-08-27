@@ -10,7 +10,7 @@ class RememberSkill(MycroftSkill):
     def __init__(self):
         super(RememberSkill, self).__init__(name='RememberSkill')
 
-    @intent_handler(IntentBuilder("RememberIntent").require("remember").require("thought"))
+    @intent_file_handler("remember.intent")
     def handle_remember_that(self, message):
         thought = "that " + message.data.get("thought")
         self.settings["thought"] = str(thought)
