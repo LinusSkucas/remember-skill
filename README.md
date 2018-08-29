@@ -1,4 +1,4 @@
-# <img src='https://rawgithub.com/FortAwesome/Font-Awesome/master/advanced-options/raw-svg/solid/brain.svg ' card_color='#FD9E66' width='50' height='50' style='vertical-align:bottom'/> Remember
+# <img src='https://rawgithub.com/FortAwesome/Font-Awesome/master/advanced-options/raw-svg/solid/brain.svg' card_color='#FD9E66' width='50' height='50' style='vertical-align:bottom'/> Remember
 Have Mycroft remember and recall thoughts for you.
 
 ## About 
