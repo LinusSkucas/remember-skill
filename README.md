@@ -18,9 +18,9 @@ With this skill, Mycroft will be able to remember thoughts for you. You will the
 Linus S (@LinusS1)
 
 ## Category
+**Productivity**
 Daily
 Information
-**Productivity**
 
 ## Tags
 #remember
